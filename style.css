@@ -23,6 +23,7 @@ html {
 body {
     margin: 0; padding: 0;
     font-family: "Pretendard-Regular";
+    background-color: rgb(88, 36, 233);
     /* background-color: rgb(163, 247, 219); */
 }
 a {
@@ -48,7 +49,7 @@ header 영역 - 로고, 메인메뉴
     bottom: 16px;
     left: 40px;
     font-family: 'RixYeoljeongdo_Regular';
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 36px;
 }
 #navmenu {
@@ -80,7 +81,7 @@ header 영역 - 로고, 메인메뉴
     position: relative;
     width: 960px;
     margin: 0 auto; /* 박스(#main-container)를 뷰포트의 가로 방향 가운데로 정렬 */
-    padding-top: 200px;
+    padding-top: 500px;
     padding-bottom: 60px;
     /*background-color: bisque;*/
 }

@@ -4,33 +4,84 @@
     <meta charset="utf-8">  <!-- 한글이 정상적으로 보이도록 설정 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- 모바일에서 콘텐츠 크기 최적화 -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>ROCKNROLL</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="video.css"> 
+    <title>장민준 자기소개서</title>
+
+    <style>
+        .swiper {
+            width: 600px;
+            height: 600px;
+        }
+        .swiper-slide > img {
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <body>
-        <div id="header">
-           <div id="logo"><a href="test.html">ROCK</a></div>
+    <div id="header">
+           <div id="logo"><a href="index.html">JANG
+           </a></div>
            <div id="navmenu">
             <a href="about.html">ABOUT</a>
             <a href="#">YOUTUBE</a>
         </div>
         </div>
-        <div id="vid-c">
+        <div id="vid-b">
           <video autoplay muted loop>
               <source src="1630-148614385.mp4" type="video/mp4">
           </video>
       </div>
-      <img src="books-5937823_1920.jpg"
+      <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="japan.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="jung.jpeg">
+            </div>
+            <div class="swiper-slide">
+                <img src="death.jpg">
+            </div>
+        </div>
+      </div>
+      <div id="main-text">
+        <p>안녕하세요. 저는 일본의 문화 관심이 있어 일본어 전공을 선택하게 되었습니다.공부를 하면서 자연스럽게 일본의 콘텐츠(만화, 드라마, JPOP)를 접하게 되었고<br> 제가 콘텐츠에 흥미를 느낀 다는 것을 알게되면서
+        복수전공으로 글로벌 문화 콘텐츠를 선택했습니다.</p>
+        <br>
+        <p>한 일</p>
+        <li>밴드 동아리에 가입해 악기만 치는 것이 중요한 게 아니라 동아리 홍보, 음향 조절, 등 다양한 것을 배웠습니다</li>
+        <li>dawdawdwadwad</li>
+        
+       
+    </div>
+
+      
+    
 
 
       
-    <div id="main-container">
-        
-        <div id="main-text">
-            <p>락은 여러 가지 서브 장르로 나뉘며, 이는 음악의 스타일, 리듬, 밴드 구성원의 특성 등에 따라 다양합니다. 대표적인 락의 서브 장르로는 클래식 락, 헤비 메탈, 펑크, 그런지, 올터너티브 락, 인디 락 등이 있습니다.</p>
-        </div>
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
 
-        
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+</script>
+
+    
 </body>
 </html>
